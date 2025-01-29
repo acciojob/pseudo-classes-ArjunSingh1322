@@ -4,13 +4,77 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		:root {
+    --bg-color: rgb(135, 206, 235); /* Sky blue background */
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, sans-serif; /* Adding a clean font for the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the article paragraphs */
+article p:first-child {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+article p:nth-child(2) {
+    color: black;
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* Styling the unordered list */
+ul {
+    list-style-type: none; /* Removing default bullet points */
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Odd list items with white background */
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+/* Font size for first and last list items */
+ul li:first-child, ul li:last-child {
+    font-size: 22px;
+}
+
+/* Pink background for third-to-last item */
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<article>
+        <p>This is the first paragraph, which should have white text on a black background.</p>
+        <p>This is the second paragraph, which should have standard text color.</p>
+        <p>This is the third paragraph, which should have red text.</p>
+    </article>
 
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
 </body>
-
 </html>
